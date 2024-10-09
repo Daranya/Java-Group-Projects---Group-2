@@ -11,11 +11,11 @@ University Submissions of our group projects in Java module
 This project simulates an energy management system where daily logs are generated for each energy source, charging station, and the system as a whole. The project supports operations like creating, moving, deleting, and archiving log files.
 
 ## Features
-● Person 1: Manages log files (creating, moving, archiving, and deleting).
+● Monica Ponnappadhas Santhini: Manages log files (creating, moving, archiving, and deleting).
 Create a Log: Creates a log file named StationA_Solar_log_<date>.txt in the
 logs/ folder.
 
-● Person 2: Manages the metadata (updating it for every file operation).
+● Arthisree saraswathi rajamanickam: Manages the metadata (updating it for every file operation).
 The MetadataManager class is responsible for keeping track of all the operations performed on
 log files by recording them in a metadata file. This file contains details about actions like
 creating, moving, archiving, and deleting log files. Metadata provides a useful audit trail,
@@ -24,7 +24,7 @@ Method Purpose: This method updates the metadata file by logging each action
 performed on a log file (e.g., create, move, delete, archive) along with a timestamp
 
 
-● Person 3: Simulates data exchange using byte and character streams.
+● Daranya Maniseharan: Simulates data exchange using byte and character streams.
 - Daily log generation for energy sources and stations
 - Log retrieval based on name or date using regular expressions
   
