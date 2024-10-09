@@ -58,7 +58,7 @@ public class EnergyManagementSystemMain {
             
             // Open log file based on equipment name and date (Part 2 of new functionality)
             System.out.println("===== Search Log File =====");
-            logManager.openLogFile("StationA", getCurrentDate());  // Use the new openLogFile() method
+            logManager.openLogFile("StationA", "Hydro", getCurrentDate());  // Use the new openLogFile() method
 
         } catch (IOException e) {
             System.out.println("An error occurred: " + e.getMessage());

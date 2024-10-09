@@ -1,0 +1,48 @@
+File Name: StationA_Solar_log_20241010.txt
+Action: CREATE
+Timestamp: 2024-10-10 00:48:04
+
+File Name: StationA_Solar_log_20241010.txt
+Action: MOVE
+Timestamp: 2024-10-10 00:48:04
+
+File Name: StationA_Solar_log_20241010.txt
+Action: ARCHIVE
+Timestamp: 2024-10-10 00:48:04
+
+File Name: StationA_Solar_log_20241010.txt
+Action: DELETE
+Timestamp: 2024-10-10 00:48:04
+
+File Name: StationA_Solar_log_20241010.txt
+Action: CREATE
+Timestamp: 2024-10-10 01:31:14
+
+File Name: StationA_Solar_log_20241010.txt
+Action: MOVE
+Timestamp: 2024-10-10 01:31:14
+
+File Name: StationA_Solar_log_20241010.txt
+Action: ARCHIVE
+Timestamp: 2024-10-10 01:31:14
+
+File Name: StationA_Solar_log_20241010.txt
+Action: DELETE
+Timestamp: 2024-10-10 01:31:14
+
+File Name: StationA_Solar_log_20241010.txt
+Action: CREATE
+Timestamp: 2024-10-10 01:38:47
+
+File Name: StationA_Solar_log_20241010.txt
+Action: MOVE
+Timestamp: 2024-10-10 01:38:47
+
+File Name: StationA_Solar_log_20241010.txt
+Action: ARCHIVE
+Timestamp: 2024-10-10 01:38:47
+
+File Name: StationA_Solar_log_20241010.txt
+Action: DELETE
+Timestamp: 2024-10-10 01:38:47
+

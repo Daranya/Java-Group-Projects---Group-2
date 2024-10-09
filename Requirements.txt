@@ -1,0 +1,17 @@
+Requirements Summary
+
+1. Read the tutorial on Basic I/O: Familiarize yourself with Java's I/O streams, focusing on handling input/output operations for managing data, files, and streams.
+
+2. Create an Energy Management System:
+
+Implement log file management functions (create, move, delete, archive).
+
+Use byte and character streams to simulate data exchange within the system, ensuring efficient handling of input/output operations.
+
+3. Read the tutorial on Regular Expressions: Study how to use regular expressions in Java to manipulate and search text patterns.
+
+4. Add the following functionality to the project:
+
+Daily Logs: Create log files for each day for every charging station, energy source, and the entire system.
+
+Search Logs: Enable users to open specific log files by searching based on the equipment's name or date. Ensure the correct file retrieval functionality using the regular expressions tutorial as a guide.

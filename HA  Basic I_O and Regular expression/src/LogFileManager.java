@@ -99,7 +99,7 @@ public class LogFileManager {
     }
     
     // Search and open log files based on equipment name or date (for Part 2 of the new functionality)
-    public void openLogFile(String equipmentName, String date) {
+    public void openLogFile(String equipmentName, String source, String date) {
         // Directory where log files are stored
         File logDir = new File("logs/");
         File[] files = logDir.listFiles();
@@ -110,7 +110,7 @@ public class LogFileManager {
         }
 
         // Regex to search for the log file
-        String regexPattern = equipmentName + "_log_" + date + "\\.txt";  // e.g., "StationA_log_20241009.txt"
+        String regexPattern = equipmentName + "_" + source + "_log_" + date + "\\.txt";  // e.g., "StationA_log_20241009.txt"
         Pattern pattern = Pattern.compile(regexPattern);
 
         boolean found = false;
