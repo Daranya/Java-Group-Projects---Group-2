@@ -2,7 +2,7 @@
 Done by:
 Monica Ponnappadhas Santhini - 7221964
 Arthisree saraswathi rajamanickam- 7216696
-Daranya Shekar - 7222079
+Daranya Maniseharan - 7222079
 
 University Submissions of our group projects in Java module
 # Energy Management System
