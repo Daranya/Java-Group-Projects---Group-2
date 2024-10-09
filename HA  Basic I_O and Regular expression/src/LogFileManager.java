@@ -12,7 +12,7 @@ public class LogFileManager {
     // Method to create log files in the "logs/" directory
     public void createLog(String station, String source) throws IOException {
         String date = new SimpleDateFormat("yyyyMMdd").format(new Date());
-        String logFileName = "logs/" + station + "" + source + "_log" + date + ".txt";
+        String logFileName = "logs/" + station + "_" + source + "_log_" + date + ".txt";
 
         File logFile = new File(logFileName);
 
@@ -84,5 +84,49 @@ public class LogFileManager {
         }
     }
     
+    // Create daily logs for each station and source (for Part 1 of the new functionality)
+    public void createDailyLogs(String[] stations, String[] sources) throws IOException {
+
+        // Create logs for each station and source
+        for (String station : stations) {
+            for (String source : sources) {
+                createLog(station, source);  // Use the existing createLog method to create the log file
+            }
+        }
+
+        // Update the system-wide log for the entire system
+        createLog("WholeSystem", "AllSources");  // Log for system as a whole
+    }
+    
+    // Search and open log files based on equipment name or date (for Part 2 of the new functionality)
+    public void openLogFile(String equipmentName, String date) {
+        // Directory where log files are stored
+        File logDir = new File("logs/");
+        File[] files = logDir.listFiles();
+        
+        if (files == null) {
+            System.out.println("[ERROR] No log files found.");
+            return;
+        }
+
+        // Regex to search for the log file
+        String regexPattern = equipmentName + "_log_" + date + "\\.txt";  // e.g., "StationA_log_20241009.txt"
+        Pattern pattern = Pattern.compile(regexPattern);
+
+        boolean found = false;
+        for (File file : files) {
+            Matcher matcher = pattern.matcher(file.getName());
+            if (matcher.matches()) {
+                System.out.println("Opening log file: " + file.getName());
+                // For now, just print the file name (you can open it using file reader or other methods if needed)
+                found = true;
+                break;
+            }
+        }
+
+        if (!found) {
+            System.out.println("No log file found for equipment: " + equipmentName + " and date: " + date);
+        }
+    }
 
 }
